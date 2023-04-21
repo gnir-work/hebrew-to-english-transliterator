@@ -1,0 +1,23 @@
+{
+  "name": "hebrew_translator_cli",
+  "version": "1.0.0",
+  "description": "Hebrew To English translator cli application",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --config webpack.js",
+    "preexecute": "npm run build",
+    "execute": "node dist/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hebrew-transliteration": "^2.4.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2"
+  }
+}
